@@ -48,7 +48,7 @@ void FusionFunctions::fuse_initialize_map(
     if(input_image.type() == 0) {
         grey_image = input_image;
     } else if(input_image.type() == 16)
-        cv::cvtColor(input_image,grey_image,CV_BGR2GRAY);
+        cv::cvtColor(input_image,grey_image,cv::COLOR_BGR2GRAY);
 
     depth = input_depth;
 //    color = input_color;
